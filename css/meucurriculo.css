@@ -1,0 +1,75 @@
+/*cor do body*/
+.claro{
+    background-color: #f0f0ef;
+    transition: 2s;
+}
+
+.escuro{
+    background-color: #80807c;
+    transition: 2s;
+}
+
+/* "meu curriculo" */
+h1{
+    font-size: 400%;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid;
+}
+
+/*imagem de claro escuro*/
+#acender{
+    width: 2%;
+    height: 2%;
+    cursor: pointer;
+}
+
+#escuro{
+    margin-left: 10px;
+    width: 2%;
+    height: 2%;
+    cursor: pointer;
+}
+
+#meunome{
+    /*font-family:'Montserrat', sans-serif;*/
+    font-size: 200%; 
+    /*margin-left: 2cm;*/
+}
+
+
+h3{
+    color: 7c8587;
+    font-family: 'Spinnaker', sans-serif;
+    /*font-family: 'Pridi', serif;*/
+}
+
+
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110%;
+}
+
+/* topicos */
+li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110%;
+}
+
+/* o que eu qro em negrito */
+.negrito{
+    font-weight: 900;
+}
+
+article{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+  main{
+    float: left;
+    width: 55%;
+}  
