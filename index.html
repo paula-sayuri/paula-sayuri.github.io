@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8"/> 
+        <link rel = "stylesheet" href = "css/blogpessoal.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+        <title>Blog pessoal</title>
+        
+</head>
+
+<body>
+    <header> 
+        <h1 id="titulo">PAULA SAYURI</h1>
+        <h2 id="subtitulo"> Blog pessoal </h2> <!-- subtitulo -->
+        <p id="descricao"> Japonesa loira do cabelo cacheado </p> 
+    </header>
+    
+    <nav> 
+        <table id="redessociais"> 
+            <tr>
+                <td class="coluna">
+                <img class="imagemredessociais" src="img/icone_facebook.png" alt="icone facebook"> 
+                <a href="https://www.facebook.com/paula.sayuri.773/"> Paula Sayuri</a>
+                </td>
+
+                <td class="coluna">
+                <img class="imagemredessociais" src="img/icone_twitter.png" alt="icone twitter"> 
+                <a href="https://twitter.com/paula_sayurii?s=08"> paula.sayurii</a>
+                </td>
+
+                <td class="coluna">
+                <img class="imagemredessociais" src="img/icone_instagram.png" alt="icone instagram"> 
+                <a href="https://www.instagram.com/paula_sayurii/"> paula_sayurii</a>
+                </td>
+
+                <td class="coluna">
+                <img class="imagemredessociais" src="img/icone_snapchat.png" alt="icone snapchat"> 
+                <a href="https://www.snapchat.com/add/paula-sayuri"> paula-sayuri</a> 
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+<!-- tr linha 
+td coluna -->
+
+    
+    <table id="principal">
+        <tr>
+            <th colspan="2"> <img id="camera" class="fotosprincipal" src="img/camera.jpg" alt="camera"> </th>
+        </tr>
+        <tr>            
+            <td> <img id="playlist" class= "fotosprincipal" src="img/playlist.JPG" alt="playlist"> </td>
+            <td rowspan="2"> <a style="text-decoration: none" href="html/pagina do curriculo.html"> <img id= "curriculo" class= "fotosprincipal" src="img/foto_do_curriculo.jpg" alt="curriculo"> </td></a>
+        </tr>   
+        <tr>
+            <td><img id="receitas" class= "fotosprincipal" src="img/receitas.JPG" alt="receitas"> </td>
+        </tr>
+    </table>
+
+</body>
+
+<script src= "../jquery-3.5.1.min.js"> </script>
+
+<script>
+    var fotoc = document.getElementById("camera");
+
+    fotoc.onmouseover = function(){
+        fotoc.classList.remove("foto_sem_mouse");
+        fotoc.classList.add("foto_com_mouse");
+    }
+
+    fotoc.onmouseout = function(){
+        fotoc.classList.remove("foto_com_mouse");
+        fotoc.classList.add("foto_sem_mouse");
+    }
+
+
+    var fotop = document.getElementById("playlist");
+
+    fotop.onmouseover = function(){
+        fotop.classList.remove("foto_sem_mouse");
+        fotop.classList.add("foto_com_mouse");
+    }
+
+    fotop.onmouseout = function(){
+        fotop.classList.remove("foto_com_mouse");
+        fotop.classList.add("foto_sem_mouse");
+    }
+
+
+    var fotor = document.getElementById("receitas");
+
+    fotor.onmouseover = function(){
+        fotor.classList.remove("foto_sem_mouse");
+        fotor.classList.add("foto_com_mouse");
+    }
+
+    fotor.onmouseout = function(){
+        fotor.classList.remove("foto_com_mouse");
+        fotor.classList.add("foto_sem_mouse");
+    }
+
+    var foto = document.getElementById("curriculo");
+
+    foto.onmouseover = function(){
+        foto.classList.remove("foto_sem_mouse");
+        foto.classList.add("foto_com_mouse");
+    }
+
+    foto.onmouseout = function(){
+        foto.classList.remove("foto_com_mouse");
+        foto.classList.add("foto_sem_mouse");
+    }
+
+</script>
+</html>
